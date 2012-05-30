@@ -1,0 +1,221 @@
+<{php}>
+// slide show album id 
+$albumId=1;
+
+// fliprの外でもfliprのmodelを使う
+require_once PENGIN_PATH.'/Pengin.php';
+
+$pengin = Pengin::getInstance();
+$pengin->path(XOOPS_ROOT_PATH.'/modules/flipr');
+
+
+$photoHandler = $pengin->getModelHandler('Photo', 'flipr');
+
+$photos = $photoHandler->findByAlbumId($albumId);
+$this->assign('slideshow_photos', $photos);
+
+$vars = $this->get_template_vars();
+<{/php}>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>"" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta name="robots" content="<{$xoops_meta_robots}>" />
+<meta name="keywords" content="<{$xoops_meta_keywords}>" />
+<meta name="description" content="<{$xoops_meta_description}>" />
+<meta name="rating" content="<{$xoops_meta_rating}>" />
+<meta name="author" content="<{$xoops_meta_author}>" />
+<meta name="copyright" content="<{$xoops_meta_copyright}>" />
+<meta name="generator" content="XOOPS" />
+<{* OGP start *}>
+<meta property="og:title" content="<{$xoops_pagetitle}>" />
+<meta property="og:type" content="community" />  
+<meta property="og:url" content="<{$xoops_url}>" />  
+<meta property="og:image" content="<{$xoops_imageurl}>images/tp_solid_main_photo.jpg" />  
+<meta property="og:site_name" content="<{$xoops_sitename}>" />  
+<meta property="og:description" content="<{$xoops_meta_description}>" />  
+<{* OGP end *}>
+
+<title><{$xoops_sitename}> - <{$xoops_pagetitle}></title>
+<link href="<{$xoops_url}>/favimages/icon.ico" rel="SHORTCUT ICON" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_url}>/xoops.css" />
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_themecss}>" />
+
+<{if $tp_top_access}>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_imageurl}>toppage.css" />
+<{else}>
+<link rel="stylesheet" type="text/css" media="all" href="<{$xoops_imageurl}>subpage.css" />
+<{/if}>
+
+<!-- RMV: added module header -->
+<{$xoops_module_header}>
+<script type="text/javascript">
+<!--
+<{$xoops_js}>
+//-->
+
+</script>
+</head>
+
+<body>
+<{$xoops_admin_task_bar}>
+<div id="back_image">&nbsp</div>
+		<div id="page">
+
+				<!-- ヘッダ -->
+				<div id="header">
+				  <div class="logo cl">
+						  
+				  <{if $tp_top_access}>
+				  <h1 id="site_name"><a href="<{$xoops_url}>/"><{$xoops_sitename}></a></h1>
+				  <{else}>
+				  <div id="site_name"><a href="<{$xoops_url}>/"><{$xoops_sitename}></a></div>
+				  <{/if}>
+				  <p id="site_slogan"><{$xoops_slogan}></p>
+				  
+				  </div>
+						
+				  <div id="loginbox">
+						  <!--TODO -->
+				  </div>
+
+				  <ul class="navimenu">
+						  <{foreach from=$headMenuList item=menu}>
+						  <li><a href="<{$menu.url}>"><{$menu.text}></a></li>
+						  <{/foreach}>
+				  </ul>
+				</div>
+
+				<{if $tp_top_access}>
+						<div id="main_banner">
+								<{slideshow width=950 height=328}>
+								<{foreach from=$slideshow_photos item=photo}>
+								<{$photo->getPhotoUrl()}>
+								<{/foreach}>
+								<{/slideshow}>						
+						</div>
+				<{/if}>
+
+				<!-- メイン -->
+				<div id="main_area">
+						<div id="container">
+
+						  <!-- 中央カラム -->
+						  <{if $xoops_showlblock == 1 && $xoops_showrblock == 1 }>
+							<div id="CenterCColumnolumn">
+							<div id="content">
+						  <{elseif $xoops_showlblock == 1}>
+							<div id="CenterCColumnolumn">
+							<div id="content-noright">
+						  <{else}>
+							<div id="CenterCColumnolumn-noleft">
+							<div id="content-noleft">
+						  <{/if}>
+
+							<{if $xoops_showcblock == 1}>
+							<!-- 中央-中央ブロック -->
+							<{if $xoops_ccblocks}>
+							<dl id="CenterCColumn">
+							<{foreach item=block from=$xoops_ccblocks name=ccc}>
+							<div <{$block.info}>>
+							<{if $block.title|substr:-5 !== ' none'}>
+							<dt><{$block.title}></dt>
+							<{/if}>
+							<dd><{$block.content}></dd>
+							</div>
+							<{/foreach}>
+							</dl>
+							<{/if}>
+<{if $xoops_clblocks || $xoops_crblocks}>
+<div id="CenterBlockWrapper" class="clearfix">
+							<!-- 中央-左ブロック -->
+							<{if $xoops_clblocks}>
+							<dl id="CenterLColumn">
+							<{foreach item=block from=$xoops_clblocks name=clc}>
+							<div <{$block.info}>>
+							<{if $block.title|substr:-5 !== ' none'}>
+							<dt><{$block.title}></dt>
+							<{/if}>
+							<dd><{$block.content}></dd>
+							</div>
+							<{/foreach}>
+							</dl>
+							<{/if}>
+							
+							<!-- 中央-右ブロック -->
+							<{if $xoops_crblocks}>
+							<dl id="CenterRColumn">
+							<{foreach item=block from=$xoops_crblocks name=crc}>
+							<div <{$block.info}>>
+							<{if $block.title|substr:-5 !== ' none'}>
+							<dt><{$block.title}></dt>
+							<{/if}>
+							<dd><{$block.content}></dd>
+							</div>
+							<{/foreach}>
+							</dl>
+							<{/if}>
+</div>
+<{/if}>
+<{/if}>
+						  <!-- メインコンテンツ -->
+							<{if $xoops_contents}><{$xoops_contents}><{/if}>
+							</div>
+						  </div>
+
+						  <!-- 左カラム -->
+						  <div id="LeftColumn">
+						  <{if $xoops_showlblock == 1}>
+							<{foreach item=block from=$xoops_lblocks}>
+							<div <{$block.info}>>
+							<{if $block.title|substr:-5 !== ' none'}>
+							<h2><{$block.title}></h2>
+							<{/if}>
+							<div class="blockContent"><{$block.content}></div>
+							</div>
+							<{/foreach}>
+						  <{/if}>
+						  </div>
+
+						</div>
+
+						<!-- 右カラム -->
+						<{if $xoops_showrblock == 1}>
+						<div id="RightColumn">
+						  <{foreach item=block from=$xoops_rblocks}>
+							<div <{$block.info}>>
+						  <{if $block.title|substr:-5 !== ' none'}>
+						  <h2><{$block.title}></h2>
+						  <{/if}>
+						  <div class="blockContent"><{$block.content}></div>
+							</div>
+						  <{/foreach}>
+						</div>
+						<{/if}>
+
+						<div id="footer_menu" class="clearfix">
+								<ul>
+										  <{foreach from=$footMenuList item=menu name=foo}>
+											<{if $smarty.foreach.foo.first}>
+										  <li style="float:left;margin-left:0px;padding-right:5px;list-style-type: none;"><a href="<{$menu.url}>"><{$menu.text}></a></li>
+											<{else}>
+										  <li style="float:left;padding-right:5px;list-style-type: none;"><a href="<{$menu.url}>"><{$menu.text}></a></li>
+											<{/if}>
+										  <{/foreach}>
+								  </ul>
+						</div>
+						<div style="clear:both;"></div>
+						<!-- フッタ -->
+						<div id="footer"><{$xoops_footer}></div>
+
+						</div>
+				</div>
+<{*
+<div style="background:#ddffff">
+<{$stdout_buffer}>
+<{xoops_explaceholder control=ryusDumpSql}>
+</div>
+*}>
+</body>
+</html>

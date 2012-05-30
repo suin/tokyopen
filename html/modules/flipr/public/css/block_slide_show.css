@@ -1,0 +1,78 @@
+.Flipr {
+	}
+
+.Flipr .FeaturedSlide {
+	display: block;
+	height: 300px;
+	}
+
+.Flipr .FeaturedBox {
+	}
+
+.Flipr .FeaturedBox img {
+	float: left;
+	width: 450px;
+	height: 300px;
+	}
+
+.Flipr .Floater {
+	display: inline;
+	float: right;
+	margin: 0 0 0 10px;
+	width: 350px;
+	height: 300px;
+	}
+
+.Flipr .Floater .Description {
+	height: 200px;
+	overflow: hidden;
+	}
+
+.Flipr .Floater .ReadMore {
+	display: block;
+	text-align: right;
+	}
+
+.Flipr .FeaturedSlieNav {
+	position: relative;
+	display: block;
+	margin: 10px auto -5px;
+	text-align: center;
+	z-index: 1000;
+	}
+
+.Flipr .FeaturedSlieNav ul {
+	display: block;
+	height: 20px;
+	list-style: none;
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 5px 0 0;
+	position: relative;	
+	}
+
+.Flipr .FeaturedSlieNav ul li {
+	display: block;
+	float: left;
+	margin: 0 10px 0 0;
+	height: 15px;
+	widows: 15px;
+	}
+
+.Flipr .FeaturedSlieNav ul li a {
+	display: block;
+	background: gray;
+	color: white;
+	border: gray solid 1px;
+	text-decoration: none;
+	width: 15px;
+	height: 15px;
+	line-height: 15px;
+	}
+
+
+.Flipr .FeaturedSlieNav ul li a.activeSlide {
+	background: white;
+	color: gray;
+	border: gray solid 1px;
+	}

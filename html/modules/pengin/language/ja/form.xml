@@ -1,0 +1,176 @@
+<language>
+
+<s>Invalid page transaction.</s>
+<t>ページトランザクションが不正です。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Controller/AbstractDeleteForm.php
+-->
+
+<s>Invalid transaction.</s>
+<t>不正なトランザくジョンです。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Controller/AbstractDeleteForm.php
+-->
+
+<s>Sucessfully deleted.</s>
+<t>削除に成功しました。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Controller/AbstractDeleteForm.php
+-->
+
+<s>Page not found.</s>
+<t>ページが見つかりません。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Controller/AbstractDeleteSimpleForm.php
+/Users/suin/web/ryuscms/html/modules/pengin/Controller/AbstractThreeStepSimpleForm.php
+-->
+
+<s>Failed to delete.</s>
+<t>削除に失敗しました。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Controller/AbstractDeleteSimpleForm.php
+-->
+
+<s>Data not found.</s>
+<t>データが見つかりません。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Controller/AbstractThreeStepForm.php
+-->
+
+<s>Sucessfully updated.</s>
+<t>保存に成功しました。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Controller/AbstractThreeStepForm.php
+-->
+
+<s>Failed to save.</s>
+<t>保存に失敗しました。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Controller/AbstractThreeStepSimpleForm.php
+-->
+
+<s>Invalid input</s>
+<t>入力値が不正です。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/_working/DateTime.php
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/Number.php
+-->
+
+<s>Invalid format.</s>
+<t>書式が正しくありません。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/_working/DateTime.php
+-->
+
+<s>Must be smaller than {1}</s>
+<t>{1}と同じかより大きい値を入力してください。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/_working/DateTime.php
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/Number.php
+-->
+
+<s>Must be larger than {1}</s>
+<t>{1}と同じかより小さい値を入力してください。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/_working/DateTime.php
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/Number.php
+-->
+
+<s>Please select {1}.</s>
+<t>{1}を選択してください。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/Checkbox.php
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/Select.php
+-->
+
+<s>On</s>
+<t>オン</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/RadioOnOff.php
+-->
+
+<s>Off</s>
+<t>オフ</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/RadioOnOff.php
+-->
+
+<s>Yes</s>
+<t>はい</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/RadioYesNo.php
+-->
+
+<s>No</s>
+<t>いいえ</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/RadioYesNo.php
+-->
+
+<s>Invalid format {1}.</s>
+<t>{1}の書式が正しくありません。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/Text.php
+-->
+
+<s>Length must be {1} characters.</s>
+<t>{1}文字で入力してください。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/Text.php
+-->
+
+<s>Must be longer than {1}</s>
+<t>{1}文字以上で入力してください。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/Text.php
+-->
+
+<s>Must be shorter than {1}</s>
+<t>{1}文字以下で入力してください。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property/Text.php
+-->
+
+<s>Please enter {1}.</s>
+<t>{1}を入力してください。</t>
+<!-- Used in:
+/Users/suin/web/ryuscms/html/modules/pengin/Form/Property.php
+-->
+
+<s>{1} is Invalid Email format.</s>
+<t>{1}はEメールとしての書式が間違っています。</t>
+
+<s>Confirm</s>
+<t>確認する</t>
+
+<s>Back</s>
+<t>入力画面に戻る</t>
+
+<s>Submit</s>
+<t>登録する</t>
+
+<s>Cancel</s>
+<t>キャンセル</t>
+
+<s>Delete</s>
+<t>削除する</t>
+
+<s>(required)</s>
+<t>(必須)</t>
+
+<s>Are you sure to delete?</s>
+<t>本当に削除してよろしいですか？</t>
+
+<s>{1}: Length must be {2} characters.</s>
+<t>{1}は{2}文字で入力してください。</t>
+
+<s>{1}: Must be {2} characters or shorter.</s>
+<t>{1}は{2}文字以下で入力してください。</t>
+
+<s>{1}: Must be {2} characters or longer.</s>
+<t>{1}は{2}文字以上で入力してください。</t>
+
+<s>Time out or unexpected screen transition.</s>
+<t>タイムアウトあるいは予期しない画面遷移が起こりました。</t>
+</language>
+

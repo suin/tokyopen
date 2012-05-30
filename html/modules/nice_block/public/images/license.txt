@@ -1,0 +1,11 @@
+block.png
+	Designer: Everaldo Coelho (http://www.everaldo.com/)
+	License: LGPL
+	Size (px): 22 x 22
+	Icon set: Crystal Clear
+
+bg_header.png
+bg_header_rib.png
+bg_header_active.png
+	From Concrete5
+	

@@ -1,0 +1,33 @@
+<language>
+
+<s>Move Blocks</s>
+<t>ブロックを移動</t>
+
+<s>Save Blocks</s>
+<t>ブロックの位置を保存</t>
+
+<s>Invalid data have been sent.</s>
+<t>正しくないデータが送信されました。</t>
+
+<s>Failed to save block position.</s>
+<t>ブロックの位置の保存に失敗しました。</t>
+
+<s>Block positions saved successfully.</s>
+<t>プロックの位置の保存に成功しました。</t>
+
+<s>Cancel Move Blocks</s>
+<t>ブロック移動をキャンセル</t>
+
+
+<s>Blocks Admin</s>
+<t>ブロック管理</t>
+
+<s>Add Custom Block</s>
+<t>カスタムブロック追加</t>
+
+
+<s>Install Block</s>
+<t>ブロックインストール</t>
+
+
+</language>

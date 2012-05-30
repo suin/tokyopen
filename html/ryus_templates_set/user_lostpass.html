@@ -1,0 +1,29 @@
+<h1><{$smarty.const._MD_USER_LANG_LOSTPASSWORD}></h1>
+<{if $actionForm->hasError()}>
+<h2><{$smarty.const._ERRORS}></h2>
+<ul class="errorMsg">
+  <{foreach item=message from=$actionForm->getErrorMessages()}>
+    <li><{$message}></li>
+  <{/foreach}>
+</ul>
+<{else}>
+<p><{$smarty.const._MD_USER_LANG_NOPROBLEM}></p>
+<{/if}>
+
+<form action="#" method="post">
+<{xoops_token form=$actionForm}>
+
+<table class="outer">
+  <tr>
+    <td class="head"><{$actionForm->getTryFieldTitle()}></td>
+    <td class="<{cycle values="odd,even"}>">
+      <{xoops_input name="try_field" value=$actionForm->get('try_field') size=34 maxlength=60}>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="foot" style="text-align:center;">
+      <input type="submit" value="<{$smarty.const._SEND}>" />
+    </td>
+  </tr>
+</table>
+</form>

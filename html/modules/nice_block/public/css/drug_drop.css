@@ -1,0 +1,28 @@
+#adminTaskBarLinkDrugDrop a,
+#tpNoModalDrugDrop a {
+	background: url(../images/block.png) no-repeat 6px center;
+	padding-left: 32px;
+	}
+
+#tpNoModalDrugDropCancel a {
+	background: url(../images/cancel.png) no-repeat 6px center;
+	padding-left: 32px;
+	}
+
+.ui-state-highlight {
+	border: dotted 1px orange; /* TODO */
+	margin: 10px 1px;
+	}
+
+.drugging {
+	background: #dfdfdf; /* TODO */
+	opacity: 0.8;
+	}
+
+#LeftColumn,
+#RightColumn, 
+#CenterLColumn,
+#CenterCColumn,
+#CenterRColumn {
+	min-height: 100px;
+	}

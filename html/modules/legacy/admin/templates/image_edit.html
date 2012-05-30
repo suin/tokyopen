@@ -1,0 +1,93 @@
+<{*
+<div class="adminnavi">
+  <a href="./index.php"><{$smarty.const._MI_LEGACY_NAME}></a>
+  &raquo;&raquo; <a href="./index.php?action=ImagecategoryList"><{$smarty.const._MI_LEGACY_MENU_IMAGE_MANAGE}></a>
+  &raquo;&raquo; <a href="./index.php?action=ImageList&amp;imgcat_id=<{$actionForm->get('imgcat_id')}>"><{$smarty.const._AD_LEGACY_LANG_IMAGE_LIST}></a>
+  <{if $actionForm->get('image_id')}>
+    &raquo;&raquo; <span class="adminnaviTitle"><{$smarty.const._AD_LEGACY_LANG_IMAGE_EDIT}></span>
+  <{else}>
+    &raquo;&raquo; <span class="adminnaviTitle"><{$smarty.const._AD_LEGACY_LANG_IMAGE_NEW}></span>
+  <{/if}>
+</div>
+*}>
+  <{if $actionForm->get('image_id')}>
+    <h1 class="admintitle"><{$smarty.const._AD_LEGACY_LANG_IMAGE_EDIT}></h1>
+  <{else}>
+    <h1 class="admintitle"><{$smarty.const._AD_LEGACY_LANG_IMAGE_NEW}></h1>
+  <{/if}>
+
+<{if $actionForm->hasError()}>
+  <ul class="error">
+    <{foreach item=message from=$actionForm->getErrorMessages()}>
+      <li><{$message|xoops_escape}></li>
+    <{/foreach}>
+  </ul>
+<{/if}>
+
+<form action="#" method="post" enctype="multipart/form-data">
+  <{xoops_token form=$actionForm}>
+  <{xoops_input type=hidden name=image_id value=$actionForm->get('image_id')}>
+  <table class="outer">
+	<thead>
+	    <tr>
+	      <th colspan="2">
+	        <{if $actionForm->get('image_id')}>
+	          <{$smarty.const._AD_LEGACY_LANG_IMAGE_EDIT}>
+	        <{else}>
+	          <{$smarty.const._AD_LEGACY_LANG_IMAGE_NEW}>
+	        <{/if}>
+	      </th>
+	    </tr>
+	</thead>
+    <{if $actionForm->get('image_id')}>
+    <tr>
+      <td class="<{cycle values="odd,even"}> legacy_list_image" colspan="2">
+      <{if $object->mImageCategory->get('imgcat_storetype') == 'file'}>
+        <img src="<{$smarty.const.XOOPS_UPLOAD_URL}>/<{$object->getShow('image_name')}>" alt="<{$object->getShow('image_nicename')}>" title="<{$object->getShow('image_nicename')}>" />
+      <{else}>
+        <img src="<{$smarty.const.XOOPS_URL}>/image.php?id=<{$object->getShow('image_id')}>" alt="<{$object->getShow('image_nicename')}>" title="<{$object->getShow('image_nicename')}>" />
+      <{/if}>
+      </td>
+    </tr>
+    <{/if}>
+    <tr>
+<{*      <th class="head"><label for="legacy_xoopsform_image_name"><{$smarty.const._AD_LEGACY_LANG_IMAGE_NAME}></label></th> *}>
+      <th class="head"><{$smarty.const._AD_LEGACY_LANG_IMAGE_NAME}></th>
+      <td class="<{cycle values="odd,even"}>">
+        <{xoops_input type=file id=legacy_xoopsform_image_name name=image_name}>
+      </td>
+    </tr>
+    <tr>
+      <th class="head"><label for="legacy_xoopsform_image_nicename"><{$smarty.const._MD_LEGACY_LANG_IMAGE_NICENAME}></label></th>
+      <td class="<{cycle values="odd,even"}>">
+        <{xoops_input type=text id=legacy_xoopsform_image_nicename name=image_nicename value=$actionForm->get('image_nicename') size=30 maxlength=255}>
+      </td>
+    </tr>
+    <tr>
+      <th class="head"><label for="legacy_xoopsform_image_display_1"><{$smarty.const._AD_LEGACY_LANG_IMAGE_DISPLAY}></label></th>
+      <td class="<{cycle values="odd,even"}>">
+        <{xoops_input type=checkbox id=legacy_xoopsform_image_display name=image_display value=1 default=$actionForm->get('image_display') size=45}>
+      </td>
+    </tr>
+    <tr>
+      <th class="head"><label for="legacy_xoopsform_image_weight"><{$smarty.const._AD_LEGACY_LANG_IMAGE_WEIGHT}></label></th>
+      <td class="<{cycle values="odd,even"}>">
+        <{xoops_input type=text id=legacy_xoopsform_image_weight name=image_weight value=$actionForm->get('image_weight') size=5}>
+      </td>
+    </tr>
+    <tr>
+      <th class="head"><label for="legacy_xoopsform_imgcat_id"><{$smarty.const._AD_LEGACY_LANG_IMGCAT_ID}></label></th>
+      <td class="<{cycle values="odd,even"}>">
+        <select name="imgcat_id" id="legacy_xoopsform_imgcat_id">
+          <{xoops_optionsArray id=imgcat_id from=$categoryArr value=imgcat_id label=imgcat_name default=$actionForm->get('imgcat_id')}>
+        </select>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="foot">
+        <input class="formButton" type="submit" value="<{$smarty.const._SUBMIT}>" />
+        <input class="formButton" type="submit" value="<{$smarty.const._BACK}>" name="_form_control_cancel" />
+      </td>
+    </tr>
+  </table>
+</form>

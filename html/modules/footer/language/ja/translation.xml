@@ -1,0 +1,34 @@
+<language>
+
+<s>Title</s>
+<t>タイトル</t>
+
+
+<s>register</s>
+<t>登録する</t>
+
+
+<s>fotter updated</s>
+<t>フッタは更新されました</t>
+
+<s>fotter updated</s>
+<t>フッタは更新されました</t>
+
+<s>{1} is required. at line {2}.</s>
+<t>{2}行目　{1}は必須入力です</t>
+
+<s>{1} is too long. at line {2}.</s>
+<t>{2}行目　{1}の入力が長すぎます</t>
+
+<s>parameter error</s>
+<t>パラメータエラー</t>
+
+<s>delete this?</s>
+<t>削除しますか？</t>
+
+<s>Footer Menu List</s>
+<t>フッタメニュー一覧</t>
+
+
+
+</language>

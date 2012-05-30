@@ -1,0 +1,191 @@
+<language>
+
+<import dirname="pengin" name="form" />
+
+<s>Page not found.</s>
+<t>ページが見つかりません。</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Abstract/Controller.php
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageDelete.php
+-->
+
+<s>Sucessfully deleted.</s>
+<t>削除に成功しました。</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Abstract/DeleteAjaxFormController.php
+-->
+
+<s>Sucessfully updated.</s>
+<t>更新に成功しました。</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Abstract/ThreeStepAjaxFormController.php
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminExternalLinkEdit.php
+-->
+
+<s>Invalid parent ID.</s>
+<t>不正な親IDです。</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminExternalLinkEdit.php
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageEdit.php
+-->
+
+<s>Failed to save.</s>
+<t>保存に失敗しました。</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminExternalLinkEdit.php
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageEdit.php
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageEdit.php
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageEdit.php
+-->
+
+<s>Delete Page</s>
+<t>ページを削除する</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageDelete.php
+-->
+
+<s>This page and all child pages will be deleted.</s>
+<t>このページと下位ページすべてが削除されます。</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageDelete.php
+-->
+
+<s>You cant delete top page.</s>
+<t>トップページを削除することはできません。</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageDelete.php
+-->
+
+<s>Failed to delete. Permission denied: module ID: </s>
+<t>削除に失敗しました。権限エラー: モジュールID: </t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageDelete.php
+-->
+
+<s>Failed to delete. Database error: module ID: </s>
+<t>削除に失敗しました。データベースエラー: モジュールID: </t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageDelete.php
+-->
+
+<s>Failed to delete.</s>
+<t>削除に失敗しました。</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminPageDelete.php
+-->
+
+<s>Sitemap</s>
+<t>サイトマップ</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Controller/AdminSitemap.php
+-->
+
+<s>Edit External Link</s>
+<t>外部リンクを編集する</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Form/AdminExternalLinkEdit.php
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/templates/admin_sitemap.default.tpl
+-->
+
+<s>Title</s>
+<t>タイトル</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Form/AdminExternalLinkEdit.php
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Form/AdminPageEdit.php
+-->
+
+<s>URL</s>
+<t>URL</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Form/AdminExternalLinkEdit.php
+-->
+
+<s>New Page</s>
+<t>新規ページ</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Form/AdminPageEdit.php
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/templates/admin_sitemap.default.tpl
+-->
+
+<s>Type</s>
+<t>タイプ</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/Form/AdminPageEdit.php
+-->
+
+<s>Visit</s>
+<t>訪問</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/templates/admin_sitemap.default.tpl
+-->
+
+<s>Delete</s>
+<t>削除</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/templates/admin_sitemap.default.tpl
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/templates/ajax_form_delete.tpl
+-->
+
+<s>Delete External Link</s>
+<t>外部リンクを削除する</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/templates/admin_sitemap.default.tpl
+-->
+
+<s>New External Link</s>
+<t>新規外部リンク</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/templates/admin_sitemap.default.tpl
+-->
+
+<s>SiteNavi</s>
+<t>サイトナビ</t>
+<!-- Used in:
+/Users/suin/Sites/Ryus/TokyoPen/html/modules/site_navi/xoops_version.php
+-->
+
+<s>Place Module</s>
+<t>モジュールを配置する</t>
+
+<s>Module</s>
+<t>モジュール</t>
+
+<s>There are no available modules to place.</s>
+<t>配置可能なモジュールがありません。</t>
+
+<s>Unplace Module</s>
+<t>モジュールを外す</t>
+
+<s>This module will be unplaced from sitemap.</s>
+<t>削除するとこのモジュールはサイトマップから外れます。</t>
+
+<s>Show children of current page</s>
+<t>表示中のページの下位ページを表示(自動)</t>
+
+<s>Show</s>
+<t>表示する</t>
+
+<s>Hide</s>
+<t>隠す</t>
+
+<s>Menu</s>
+<t>表示するメニュー</t>
+
+<s>Show parent link</s>
+<t>親へのリンクをメニューに表示する</t>
+
+
+<s>PrivateFlag</s>
+<t>非公開フラグ</t>
+
+<s>InvisibleInMenuFlag</s>
+<t>メニューに非表示フラグ</t>
+
+<s>Edit</s>
+<t>修正</t>
+
+<s>Edit Page</s>
+<t>編集ページ</t>
+
+</language>
+

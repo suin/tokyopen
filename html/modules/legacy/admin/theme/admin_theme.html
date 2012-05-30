@@ -1,0 +1,189 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<{$xoops_langcode}>" lang="<{$xoops_langcode}>">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=<{$xoops_charset}>" />
+<meta http-equiv="content-language" content="<{$xoops_langcode}>" />
+<meta http-equiv="content-script-type" content="text/javascript" />
+<meta http-equiv="content-style-type" content="text/css" />
+<title><{$legacy_sitename|xoops_escape}> : <{$smarty.const._CPHOME}> : <{$legacy_pagetitle|xoops_escape}></title>
+<{stylesheet file=style.css}>
+<{stylesheet file=module.css}>
+<link rel="stylesheet" type="text/css" media="all" href="<{$smarty.const.TP_JQUERY_UI_THEME_URL}>" />
+<script type="text/javascript" src="<{$xoops_url}>/include/xoops.js"></script>
+
+
+<script type="text/javascript" src="<{$smarty.const.TP_JQUERY_URL}>"></script>
+<script type="text/javascript" src="<{$smarty.const.TP_JQUERY_UI_URL}>"></script>
+
+<script type="text/javascript">
+<!-- <![CDATA[
+var cid = <{if $smarty.get.fct == "preferences" && $smarty.get.mod > 0}><{$smarty.get.mod}><{else}><{$currentModule->mXoopsModule->get('mid')}><{/if}>;
+function ccToggle(id)
+{
+	el = xoopsGetElementById('c'+id).style;
+	if (el.display == 'block') {
+		el.display = 'none';
+		xoopsGetElementById('t'+id).className = 'head';
+		xoopsGetElementById('i'+id).src = '<{"design/navy.gif"|theme}>';
+	} else {
+		el.display = 'block';
+		xoopsGetElementById('t'+id).className = 'head2';
+		xoopsGetElementById('i'+id).src = '<{"design/orange.gif"|theme}>';
+	}
+}
+// ]]> -->
+</script>
+
+<script type="text/javascript">
+var scrolltotop={
+	//startline: Integer. Number of pixels from top of doc scrollbar is scrolled before showing control
+	//scrollto: Keyword (Integer, or "Scroll_to_Element_ID"). How far to scroll document up when control is clicked on (0=top).
+	setting: {startline:-1000, scrollto: 0, scrollduration:1000, fadeduration:[500, 100], hideAtBottom: true},
+	controlHTML: '<a href="http://tokyopen.org/modules/d3forum/index.php?forum_id=1&adminlink=1" target="_blank"><img src="<{$xoops_url}>/modules/legacy/admin/theme/design/ousamapenguin_help.png" style="width:300px; height:116px" /></a>', //HTML for control, which is auto wrapped in DIV w/ ID="topcontrol"
+	controlattrs: {offsetx:5, offsety:5}, //offset of control relative to right/ bottom of window corner
+	anchorkeyword: 'http://tokyopen.org', //Enter href value of HTML anchors on the page that should also act as "Scroll Up" links
+
+	state: {isvisible:false, shouldvisible:false},
+
+	keepfixed:function(){
+		var $window=jQuery(window)
+		var controlx=$window.scrollLeft() + $window.width() - this.$control.width() - this.controlattrs.offsetx
+		var controly=$window.scrollTop() + $window.height() - this.$control.height() - this.controlattrs.offsety
+		this.$control.css({left:controlx+'px', top:controly+'px'})
+	},
+
+	togglecontrol:function(){
+		var scrolltop = jQuery(window).scrollTop();
+
+		if (!this.cssfixedsupport) {
+			this.keepfixed();
+		}
+
+		if (scrolltop >= this.setting.startline) {
+			this.state.shouldvisible = true;
+		} else {
+			this.state.shouldvisible = false;
+		}
+
+		if ( this.setting.hideAtBottom == true ) {
+			var bottom = scrolltop + $('html').get(0).clientHeight;
+			var documentHeight = $(document).height();
+
+			if ( scrolltop > 0 && bottom >= documentHeight ) {
+				this.state.shouldvisible = false;
+			}
+		}
+
+		if (this.state.shouldvisible && !this.state.isvisible){
+			this.$control.stop().animate({opacity:1}, this.setting.fadeduration[0])
+			this.state.isvisible=true
+		}
+		else if (this.state.shouldvisible==false && this.state.isvisible){
+			this.$control.stop().animate({opacity:0}, this.setting.fadeduration[1])
+			this.state.isvisible=false
+		}
+	},
+	
+	init:function(){
+		jQuery(document).ready(function($){
+			var mainobj=scrolltotop
+			var iebrws=document.all
+			mainobj.cssfixedsupport=!iebrws || iebrws && document.compatMode=="CSS1Compat" && window.XMLHttpRequest //not IE or IE7+ browsers in standards mode
+			mainobj.$body=(window.opera)? (document.compatMode=="CSS1Compat"? $('html') : $('body')) : $('html,body')
+			mainobj.$control=$('<div id="topcontrol">'+mainobj.controlHTML+'</div>')
+				.css({position:mainobj.cssfixedsupport? 'fixed' : 'absolute', bottom:mainobj.controlattrs.offsety, right:mainobj.controlattrs.offsetx, opacity:0, cursor:'pointer'})
+				.attr({title:'ask!'})
+				.appendTo('body')
+			if (document.all && !window.XMLHttpRequest && mainobj.$control.text()!='') //loose check for IE6 and below, plus whether control contains any text
+				mainobj.$control.css({width:mainobj.$control.width()}) //IE6- seems to require an explicit width on a DIV containing text
+			mainobj.togglecontrol()
+			$('a[href="' + mainobj.anchorkeyword +'"]').click(function(){
+				mainobj.scrollup()
+				return false
+			})
+			$(window).bind('scroll resize', function(e){
+				mainobj.togglecontrol()
+			});
+
+			// Append penguin height blank to #contentBody
+			$('<div />').height($('#topcontrol').height()).appendTo('#contentBody');
+		})
+	}
+}
+
+scrolltotop.init()
+</script>
+
+
+
+</head>
+<body onload="ccToggle(cid);">
+<div id="container">
+<table cellspacing="0" id="header">
+<tr>
+<td class="logo">
+  <a href="<{$xoops_url}>/admin.php" target="_blank"><h1 style="color:#ffffff"><{$legacy_sitename|xoops_escape}> <{$smarty.const._CPHOME}></h1></a>
+</td>
+</tr>
+<tr>
+<td class="topnav" colspan="2">
+<img src="<{"design/menulist.gif"|theme}>" alt="" /> <a href="<{$xoops_url}>/admin.php"><{$smarty.const._CPHOME}></a>
+<img src="<{"design/menulist.gif"|theme}>" alt="" /> <a href="<{$xoops_url}>/"><{$smarty.const._YOURHOME}></a>
+<img src="<{"design/menulist.gif"|theme}>" alt="" /> <a href="<{$xoops_url}>/user.php?op=logout"><{$smarty.const._LOGOUT}></a>
+</td>
+</tr>
+</table>
+
+<table cellspacing="0">
+<tr>
+<td id="leftcolumn">
+  <{$xoops_lblocks.sidemenu.content}>
+  <{foreach name=lblock item=block from=$xoops_lblocks}>
+  <{if $block.name != 'action_search' && $block.name != 'sidemenu'}>
+  <{$block.content}>
+  <{/if}>
+  <{/foreach}>
+</td>
+<td id="centercolumn">
+<noscript>
+  <div id="menunavi">
+  <h2><{$currentModule->mXoopsModule->getShow('name')}></h2>
+  <{if $currentModule->getAdminMenu()}>
+    <ul class="submenunavi">
+      <{foreach item=menu from=$currentModule->getAdminMenu()}>
+        <{if $menu.show !== false}>
+          <li><a href="<{$menu.link|xoops_escape:link}>"><{$menu.title|xoops_escape}></a></li>
+        <{/if}>
+      <{/foreach}>
+    </ul>
+  <{/if}>
+  </div>
+</noscript>
+
+  <div id="contentBody">
+  <div id="menunavi">
+  <h2><{$currentModule->mXoopsModule->getShow('name')}></h2>
+  <{if $currentModule->getAdminMenu()}>
+    <ul class="submenunavi">
+      <{foreach item=menu from=$currentModule->getAdminMenu()}>
+        <{if $menu.show !== false}>
+          <li><a href="<{$menu.link|xoops_escape:link}>"><{$menu.title|xoops_escape}></a></li>
+        <{/if}>
+      <{/foreach}>
+          <li style="background:#87CEFA;"><a href="<{$xoops_url}>/admin.php" style="color:#ffffff;"><{$smarty.const._CPHOME}></a></li>
+    </ul>
+  <{/if}>
+  </div>
+<{$xoops_contents}>
+
+</div>
+
+</td>
+</tr>
+</table>
+
+<div id="footer">Powered by&nbsp;<{$smarty.const.XOOPS_VERSION}>&copy;  <a href="http://tokyopen.jp/" target="_blank">TOKYOPen Project</a></div>
+
+</div>
+</body>
+</html>

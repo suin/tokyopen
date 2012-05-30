@@ -1,0 +1,9 @@
+#back_image{
+    background-image: url("./images/tp_solid_page_back.png");
+    height:500px;
+    width:100%;
+}
+
+#page{
+    margin-top:-489px;
+}

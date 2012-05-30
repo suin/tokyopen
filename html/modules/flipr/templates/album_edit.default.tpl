@@ -1,0 +1,1 @@
+<{include file="pen:`$dirname`.album_new.default.tpl"}>

@@ -1,0 +1,202 @@
+<language>
+
+<import dirname="pengin" name="form" />
+
+<s>Page not found.</s>
+<t>ページが見つかりません。</t>
+
+<s>Not Found</s>
+<t>ページが見つかりません。</t>
+
+<s>Please login</s>
+<t>ログインしてください。</t>
+
+<s>Failed to save.</s>
+<t>保存に失敗しました。</t>
+
+<s>Edit Property</s>
+<t>属性を編集する</t>
+
+<s>Name</s>
+<t>名前</t>
+
+<s>Lower case alphabet and numbers</s>
+<t>使用できる文字: a-z, 0-9, アンダースコア(_)</t>
+
+<s>Label</s>
+<t>表示名</t>
+
+<s>Type</s>
+<t>タイプ</t>
+
+<s>Required</s>
+<t>必須</t>
+
+<s>Option</s>
+<t>オプション</t>
+
+<s>When you choose 'select', 'radio' or 'checkbox' type, please input options with separating line break.</s>
+<t>「セレクト」「ラジオ」「チェックボックス」を選んだ場合、選択肢を1行ごとに入力してください。</t>
+
+<s>Note</s>
+<t>備考</t>
+
+<s>Use in pages</s>
+<t>使用するページ</t>
+
+<s>{1} is unavailable. '{2}' column already exists in users-table.</s>
+<t>{1}はご利用になれません。「{2}」カラムが既にユーザテーブルに存在しています。</t>
+
+<s>{1} is duplicated. '{2}' has been already used.</s>
+<t>{1}が重複しています。「{2}」は既に使われています。</t>
+
+<s>Add Property Set</s>
+<t>属性セットを追加する</t>
+
+<s>Title</s>
+<t>タイトル</t>
+
+<s>Description</s>
+<t>説明文</t>
+
+<s>New property</s>
+<t>属性を追加する</t>
+
+<s>view</s>
+<t>表示</t>
+
+<s>edit</s>
+<t>編集</t>
+
+<s>delete</s>
+<t>削除</t>
+
+<s>Edit Profile</s>
+<t>プロフィールを編集する</t>
+
+<s>Profile</s>
+<t>プロフィール</t>
+
+<!-- !begin タイプの選択肢 -->
+<s>Text</s>
+<t>テキスト</t>
+
+<s>Textarea</s>
+<t>テキストエリア</t>
+
+<s>Select</s>
+<t>セレクト</t>
+
+<s>Radio</s>
+<t>ラジオ</t>
+
+<s>Checkbox</s>
+<t>チェックボックス</t>
+<!-- !end タイプの選択肢 -->
+
+<s>optional</s>
+<t>任意</t>
+
+<s>required</s>
+<t>必須</t>
+
+<!-- !begin Plugin/Core/Password -->
+<s>Password</s>
+<t>パスワード</t>
+
+<s>(Re-type new password)</s>
+<t>(パスワード確認)</t>
+
+<s>(new password)</s>
+<t>(新しいパスワード)</t>
+
+<s>(no password change)</s>
+<t>(パスワード変更なし)</t>
+
+<s>The specified value {1} is wrong.</s>
+<t>{1}の入力値が不正です。</t>
+
+<s>The passwords you gave did not match.</s>
+<t>パスワードと確認用パスワードが一致しません</t>
+<!-- !end Plugin/Core/Password -->
+
+<s>User list</s>
+<t>ユーザ一覧</t>
+
+<s>UID</s>
+<t>UID</t>
+
+<s>User name</s>
+<t>ユーザ名</t>
+
+<s>Real name</s>
+<t>氏名</t>
+
+<s>{1}'s profile</s>
+<t>{1}さんのプロフィール</t>
+
+<s>Edit {1}'s profile</s>
+<t>{1}さんのプロフィールを編集する</t>
+
+<s>Manage properties</s>
+<t>属性管理</t>
+
+<!-- !begin Plugin/Core/Birthday -->
+<s>Birthday</s>
+<t>生年月日</t>
+<s>year:{1} month:{2} day:{3}</s>
+<t>{1}年 {2}月 {3}日</t>
+<s>{1} years old</s>
+<t>{1}歳</t>
+<s>Year must be number.</s>
+<t>年は半角数字で入力してください。</t>
+<s>Please select month.</s>
+<t>月を選択してください。</t>
+<s>Please select day.</s>
+<t>日を選択してください。</t>
+<s>Please complete input all of year, month and day.</s>
+<t>年月日をすべて入力してください。</t>
+<s>Please input valid date.</s>
+<t>正しい年月日を入力してください。</t>
+<s>January</s>
+<t>1</t>
+<s>February</s>
+<t>2</t>
+<s>March</s>
+<t>3</t>
+<s>April</s>
+<t>4</t>
+<s>May</s>
+<t>5</t>
+<s>June</s>
+<t>6</t>
+<s>July</s>
+<t>7</t>
+<s>August</s>
+<t>8</t>
+<s>September</s>
+<t>9</t>
+<s>October</s>
+<t>10</t>
+<s>November</s>
+<t>11</t>
+<s>December</s>
+<t>12</t>
+<!-- !end Plugin/Core/Birthday -->
+
+
+<s>Avator</s>
+<t>アバター</t>
+
+<s>Edit Avator</s>
+<t>アバター編集</t>
+
+
+<s>Home Page</s>
+<t>ホームページ</t>
+
+<s>E-mail</s>
+<t>メールアドレス</t>
+
+</language>
+

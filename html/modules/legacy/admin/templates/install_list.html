@@ -1,0 +1,34 @@
+<div class="adminnavi">
+  <a href="./index.php"><{$smarty.const._MI_LEGACY_NAME}></a>
+  &raquo;&raquo; <a href="./index.php?action=ModuleList"><{$smarty.const._MI_LEGACY_MENU_MODULELIST}></a>
+  &raquo;&raquo; <span class="adminnaviTitle"><a href="./index.php?action=InstallList"><{$smarty.const._AD_LEGACY_LANG_MODINSTALL}></a></span>
+</div>
+
+<h1 class="admintitle"><{$smarty.const._AD_LEGACY_LANG_MODINSTALL}></h1>
+
+<div class="tips"><{$smarty.const._AD_LEGACY_LANG_MODINSTALL_LIST_ADVICE}></div>
+
+<table class="outer">
+	<tr>
+		<th><{$smarty.const._AD_LEGACY_LANG_MOD_NAME}></th>
+		<th><{$smarty.const._AD_LEGACY_LANG_MOD_DIR_NAME}></th>
+		<th><{$smarty.const._AD_LEGACY_LANG_VERSION}></th>
+		<th><{$smarty.const._AD_LEGACY_LANG_CONTROL}></th>
+	</tr>
+	<{foreach item=module from=$moduleObjects}>
+		<tr class="<{cycle values='odd,even'}>">
+			<td style="text-align:left">
+				<span>
+					<img src="<{$module->getNiceIconUrl()}>" alt="<{$module->getShow('name')}>" style="width:35px;height:35px;vertical-align:middle" />
+					<span><{$module->getShow('name')}></span>
+				</span>
+			</td>
+			<td class="legacy_list_order"><{$module->getShow('dirname')}></td>
+			<td class="legacy_list_order"><{$module->getRenderedVersion()}></td>
+			<td class="legacy_list_control">
+				<a href="index.php?action=ModuleInstall&amp;dirname=<{$module->getShow('dirname')}>"><img src="<{"icons/install.gif"|theme}>" alt="<{$smarty.const._AD_LEGACY_LANG_INSTALL}>" title="<{$smarty.const._AD_LEGACY_LANG_INSTALL}>" /></a>
+				<a href="index.php?action=ModuleInfo&amp;dirname=<{$module->getShow('dirname')}>"><img src="<{"icons/info.gif"|theme}>" alt="<{$smarty.const._AD_LEGACY_LANG_INFORMATION}>" title="<{$smarty.const._AD_LEGACY_LANG_INFORMATION}>" /></a>
+			</td>
+		</tr>
+	<{/foreach}>
+</table>

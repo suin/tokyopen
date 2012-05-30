@@ -1,0 +1,33 @@
+<?php
+$dirname  = dirname(__FILE__);
+$basename = basename($dirname);
+
+// Main
+$modversion['name']        = "NiceAdmin"; // TODO >> multi-language
+$modversion['version']     = 1.00;
+$modversion['description'] = "This provides better admin interface"; // TODO >> mulit-language
+$modversion['credits']     = 'RYUS Inc.';
+$modversion['author']      = 'Hidehito NOZAWA aka Suin <http://ryus.co.jp/>';
+$modversion['help']	       = 'Readme/japanese.html';
+$modversion['license']     = 'GNU GPL v2 see LISENCE';
+$modversion['image']       = 'public/images/module_icon.png';
+$modversion['nice_image']  = 'public/images/module_nice_icon.png';
+$modversion['dirname']     = $basename;
+
+$modversion['cube_style'] = true;
+
+$modversion['hasMain'] = 0;
+
+$modversion['hasAdmin']   = 0;
+$modversion['adminindex'] = 'admin/index.php';
+$modversion['adminmenu']  = 'admin/menu.php';
+
+$modversion['hasSearch'] = 0;
+
+$modversion['hasNotification'] = 0;
+
+$modversion['hasComments'] = 0;
+
+$modversion['onInstall']   = 'PlatForm/Installer.php';
+$modversion['onUpdate']    = 'PlatForm/Installer.php';
+$modversion['onUninstall'] = 'PlatForm/Installer.php';

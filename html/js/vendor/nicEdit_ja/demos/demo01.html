@@ -1,0 +1,38 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>デモ1 : 全てのテキストエリアにエディタを適用する</title>
+</head>
+<body>
+
+<div id="menu"></div>
+
+<div id="intro">
+次の例では、「nicEditors.allTextareas()」関数を呼び出すことで、同じページにある３つのテキストエリアがすべて NicEditor に変換されています。NicEditor は入れ替わるテキストエリアと同じサイズで表示されます。
+</div>
+<br />
+
+<div id="sample">
+<script type="text/javascript" src="../nicEdit.js"></script>
+<script type="text/javascript">
+	bkLib.onDomLoaded(function() { nicEditors.allTextAreas() });
+</script>
+
+<h4>テキストエリア1</h4>
+<textarea name="area1" cols="35"></textarea>
+<br />
+
+<h4>テキストエリア2</h4>
+<div><textarea name="area2" style="width: 100%;">
+	このテキストエリアには初めから何か書かれています。
+</textarea></div>
+<br />
+
+<h4>テキストエリア3</h4>
+<textarea name="area3" style="width: 300px; height: 100px;">
+	テキストエリアに <i>デフォルト</i> の HTML <b>コンテンツ</b> があります。
+</textarea>
+</div>
+
+</body>
+</html>

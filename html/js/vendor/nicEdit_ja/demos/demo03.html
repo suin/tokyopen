@@ -1,0 +1,66 @@
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	<title>デモ3 : NicEditor の追加と消去</title>
+</head>
+<body>
+
+<div id="menu"></div>
+
+<div id="intro">
+<p>次のデモでは、テキストエリアと DIV 要素の両方で、NicEditor の表示切り替えを見ることができます。NicEdit インスタンスは、いつでも追加・消去できます。</p>
+</div>
+<br />
+
+<div id="sample">
+<h4>DIV 要素の例</h4>
+	<div id="myArea1" style="width: 300px; height: 100px; border: 1px solid #000;">
+		これはテストです。<br />
+		DIVタグの中です。<br />
+		ボタンを押してエディタを起動してみましょう。
+	</div>
+	<button onClick="toggleArea1();">DIV エディタ切り替え</button>
+	<button onClick="setContentArea1();">DIV 内容入れ替え</button>
+<br /><br />
+<h4>テキストエリアの例</h4>
+<div>
+	<textarea style="width: 300px; height: 100px;" id="myArea2"></textarea>
+	<br />
+	<button onClick="addArea2();">テキストエリアにエディタを追加</button> <button onClick="removeArea2();">テキストエリアからエディタを消去</button>	
+	<button onClick="setContentArea2();">内容入れ替え</button>
+</div>
+<div style="clear: both;"></div>
+
+<script src="../nicEdit.js" type="text/javascript"></script>
+<script>
+var area1, area2;
+
+function toggleArea1() {
+	if(!area1) {
+		area1 = new nicEditor({fullPanel : true}).panelInstance('myArea1',{hasPanel : true});
+	} else {
+		area1.removeInstance('myArea1');
+		area1 = null;
+	}
+}
+
+function setContentArea1() {
+	if (area1 !== null) area1.instanceById('myArea1').setContent("データを入れ替え<br />データを入れ替え<br />データを入れ替え<br />");
+}
+
+function addArea2() {
+	area2 = new nicEditor({fullPanel : true}).panelInstance('myArea2');
+}
+function removeArea2() {
+	area2.removeInstance('myArea2');
+}
+function setContentArea2() {
+	if (area2 !== null) area2.instanceById('myArea2').setContent("データを入れ替え<br />データを入れ替え<br />データを入れ替え<br />");
+}
+
+bkLib.onDomLoaded(function() { toggleArea1(); });
+</script>	
+</div>
+
+</body>
+</html>

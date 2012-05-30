@@ -1,0 +1,13 @@
+Giøn - An Icon Set
+
+To install the iconset drag the .tar.bz2 file and drop it in the theme preferences dialog.
+
+-OR-
+
+Unpack the iconset to ~/.icons or /usr/share/icons like this:
+
+tar -xvjpf gion-[version].tar.bz2 -C ~/.icons
+
+_________________________________________________________________
+
+note: "~" means is your home directory, i.e.: /home/[YOU]/.icons

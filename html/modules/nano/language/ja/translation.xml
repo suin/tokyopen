@@ -1,0 +1,60 @@
+<language>
+
+<s>no contents here</s>
+<t>ここにはコンテンツがありません</t>
+
+<s>Title</s>
+<t>タイトル</t>
+
+<s>Content</s>
+<t>内容</t>
+
+<s>You do not have management authority</s>
+<t>管理権限がありません</t>
+
+<s>register</s>
+<t>登録する</t>
+
+<s>New</s>
+<t>新規</t>
+
+<s>Update</s>
+<t>更新</t>
+
+<s>Failed to add new contents</s>
+<t>新しい内容を登録時エラーが起こりました</t>
+
+<s>{1} is required</s>
+<t>{1}は必須入力です</t>
+
+<s>{1} is too long</s>
+<t>{1}の入力が長すぎます</t>
+
+<s>ERROR: Please confirm the from and submit again.</s>
+<t>エラー: フォームの内容を確認して問題なければ再送信してください。</t>
+
+<s>Added contents successfully</s>
+<t>コンテンツの追加に成功しました</t>
+
+<s>Updated contents successfully</s>
+<t>コンテンツの更新に成功しました</t>
+
+<s>Editor on</s>
+<t>エディタ ON</t>
+
+<s>Editor off</s>
+<t>エディタ OFF</t>
+
+<s>Edit Contents</s>
+<t>編集する</t>
+
+<s>You must have JavaScript enabled to view this page as intended.</s>
+<t>このページをご利用になるにはJavaScriptをONにしてください。</t>
+
+<s>Save Contents</s>
+<t>変更を保存する</t>
+
+<s>Your changes will be lost if you don't save them.</s>
+<t>変更内容が保存されていません。</t>
+
+</language>

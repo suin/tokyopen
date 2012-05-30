@@ -1,0 +1,379 @@
+<language>
+
+<s>Preference</s>
+<t>一般設定</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AdminConfig.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/admin/menu.php
+-->
+
+<s>Successaly update preference.</s>
+<t>一般設定を更新しました。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AdminConfig.php
+-->
+
+<s>Sorry, you don't have the permission to access this area.</s>
+<t>アクセス権限がありません。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumList.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumNew.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoNew.php
+-->
+
+<s>Please select album.</s>
+<t>アルバムを選択してください。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumEdit.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoList.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoNew.php
+-->
+
+<s>Album not found.</s>
+<t>アルバムが見つかりません。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumEdit.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/BlockSlideShow.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/Photo.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoList.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoNew.php
+-->
+
+<s>Delete {1}</s>
+<t>{1}を削除する</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoDelete.php
+-->
+
+<s>ERROR: Please confirm the from and submit again.</s>
+<t>エラー: フォームの内容を確認して問題なければ再送信してください。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumNew.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoNew.php
+-->
+
+<s>DATABASE ERROR: Failed to delete album. ERR{1}</s>
+<t>データベースエラー: アルバム削除に失敗しました。ERR{1}</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoDelete.php
+-->
+
+<s>Deleted album successfully.</s>
+<t>アルバムを削除しました。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumDelete.php
+-->
+
+<s>Saved album successfully.</s>
+<t>アルバムを保存しました。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumEdit.php
+-->
+
+<s>Failed to add new album.</s>
+<t>アルバム新規作成に失敗しました。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumNew.php
+-->
+
+<s>Please enter album name.</s>
+<t>アルバム名を入力してください。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumNew.php
+-->
+
+<s>Album name is too long.</s>
+<t>アルバム名が長すぎます。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumNew.php
+-->
+
+<s>Added new album successfully.</s>
+<t>アルバムを新規作成しました。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/AlbumNew.php
+-->
+
+<s>Please select photo.</s>
+<t>写真を選択してください。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/Photo.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoEdit.php
+-->
+
+<s>Photo not found.</s>
+<t>写真が見つかりません。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/Photo.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoDelete.php
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoEdit.php
+-->
+
+<s>Deleted photo successfully.</s>
+<t>写真を削除しました。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoDelete.php
+-->
+
+<s>Edit {1}</s>
+<t>{1}を編集する</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoEdit.php
+-->
+
+<s>Please enter Photo Name.</s>
+<t>写真名を入力してください。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoEdit.php
+-->
+
+<s>Updated photo successfully.</s>
+<t>写真を更新しました。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoEdit.php
+-->
+
+<s>Failed to upload photo.</s>
+<t>写真のアップロードに失敗しました。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoNew.php
+-->
+
+<s>Uploaded photo successfully.</s>
+<t>写真をアップロードしました。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoNew.php
+-->
+
+<s>Photo Name is too long.</s>
+<t>写真名が長すぎます。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoNew.php
+-->
+
+<s>Please select file.</s>
+<t>ファイルを選択してください。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoNew.php
+-->
+
+<s>Upload Photos to {1}</s>
+<t>{1}にアップロードする</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/Controller/PhotoNew.php
+-->
+
+<s>Yes</s>
+<t>はい</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/admin_config.default.tpl
+-->
+
+<s>No</s>
+<t>いいえ</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/admin_config.default.tpl
+-->
+
+<s>Save</s>
+<t>保存する</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/admin_config.default.tpl
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/album_new.default.tpl
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_edit.default.tpl
+-->
+
+<s>Are you sure you want to delete your album?</s>
+<t>本当にアルバムを削除しますか？</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/album_delete.default.tpl
+-->
+
+<s>All photos in this album will be deleted.</s>
+<t>このアルバムの写真すべてが削除されます。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/album_delete.default.tpl
+-->
+
+<s>Delete</s>
+<t>削除する</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/album_delete.default.tpl
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_delete.default.tpl
+-->
+
+<s>Upload Photos</s>
+<t>写真をアップロードする</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/album_list.default.tpl
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_list.default.tpl
+-->
+
+<s>Select album to upload.</s>
+<t>アップロードするアルバムを選んでください。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/album_list.upload.tpl
+-->
+
+<s>New Album</s>
+<t>アルバム新規作成</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/album_list.upload.tpl
+-->
+
+<s>Name</s>
+<t>名前</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/album_new.default.tpl
+-->
+
+<s>Description</s>
+<t>説明</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/album_new.default.tpl
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_edit.default.tpl
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_new.default.tpl
+-->
+
+<s>Album</s>
+<t>アルバム</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/block_slide_show.edit.tpl
+-->
+
+<s>more</s>
+<t>続き</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/block_slide_show.show.tpl
+-->
+
+<s>Edit Photo</s>
+<t>写真を編集する</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo.default.tpl
+-->
+
+<s>Delete Photo</s>
+<t>写真を削除する</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo.default.tpl
+-->
+
+<s>Are you sure you want to delete your photo?</s>
+<t>本当に写真を削除しますか？</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_delete.default.tpl
+-->
+
+<s>Photo Image</s>
+<t>写真画像</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_edit.default.tpl
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_new.default.tpl
+-->
+
+<s>Upload file size limit is {1}.</s>
+<t>{1} までアップロードすることができます。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_edit.default.tpl
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_new.default.tpl
+-->
+
+<s>Photo Name</s>
+<t>写真名</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_edit.default.tpl
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_new.default.tpl
+-->
+
+<s>Edit Album</s>
+<t>アルバムを編集する</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_list.default.tpl
+-->
+
+<s>Delete Album</s>
+<t>アルバムを削除する</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_list.default.tpl
+-->
+
+<s>Upload</s>
+<t>アップロードする</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/templates/photo_new.default.tpl
+-->
+
+<s>Thumbnail width</s>
+<t>サムネイル画像の幅(px)</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/config.php
+-->
+
+<s>Thumbnail height</s>
+<t>サムネイル画像の縦(px)</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/config.php
+-->
+
+<s>Photo max width</s>
+<t>アップロードを許可する画像最大幅(px)</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/config.php
+-->
+
+<s>Photo max height</s>
+<t>アップロードを許可する画像最大縦(px)</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/config.php
+-->
+
+<s>File max size</s>
+<t>アップロードを許可する最大ファイルサイズ(bytes)</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/config.php
+-->
+
+<s>Flipr</s>
+<t>Flipr(アルバム)</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/xoops_version.php
+-->
+
+<s>This is a photo album module.</s>
+<t>このモジュールは写真アルバムです。</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/xoops_version.php
+-->
+
+<s>Slide Show</s>
+<t>スライドショー</t>
+<!-- Used in:
+/Applications/MAMP/htdocs/ryusdist/html/modules/flipr/xoops_version.php
+-->
+
+<s>Poster</s>
+<t>投稿者</t>
+
+<s>Created Date</s>
+<t>作成日時</t>
+
+<s>Modified Date</s>
+<t>更新日時</t>
+
+<s>Upload directory doesn't exist.</s>
+<t>画像アップロード先のディレクトリが存在しません。</t>
+
+</language>
+

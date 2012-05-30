@@ -1,0 +1,158 @@
+body {
+	margin:10px 0;
+	padding:0;
+	color:#000000;
+	font-size:100%;
+	text-align:center;
+	font-family: Meiryo, Helvetica, "‚l‚r ‚oƒSƒVƒbƒN", Osaka, "ƒqƒ‰ƒMƒmŠpƒS Pro W3", sans-serif;
+  	background: url(../images/logo.gif) no-repeat 0 0;
+}
+
+h1 {
+	font-size: 130%;
+	margin: 16px 0;
+}
+h2 {
+	background-color: #f8f8f8;
+	border-top: 1px #a0a0a0 solid;
+	border-bottom: 1px #a0a0a0 solid;
+	clear: both;
+	font-size: 110%;
+	margin: 16px 0 10px;
+	padding: 4px 15px;
+}
+h3 {
+	background-color: #f8f8f8;
+	border-top: 1px #a0a0a0 solid;
+	border-bottom: 1px #a0a0a0 solid;
+	clear: both;
+	font-size: 110%;
+	margin: 16px 0 10px;
+	padding: 4px 15px;
+}
+h4 {
+	background-color: #eeeeee;
+	font-size: 110%;
+	padding: 4px 15px;
+}
+
+a {
+	font-weight: bold;
+}
+
+img {border:0;}
+
+#container {
+	width: auto;
+	margin: 2px 20px;
+	text-align:left;
+	border: 1px solid #b1b1b1;
+}
+
+#header {
+	background:#eeeeee;
+	padding:8px 16px;
+	text-align:right;
+	vertical-align:middle;
+	border-top: 1px solid #b1b1b1;
+	border-bottom: 1px solid #b1b1b1;
+}
+
+#headMassage {
+	padding: 8px 20px;
+	background-color: #f8f8f8;
+}
+
+.maincontents {
+	background:#ffffff url(../images/bg.gif) repeat-y top right;
+	padding:16px 20px;
+	line-height:150%;
+}
+.title {
+}
+
+#footer {
+	background:#eeeeee;
+	padding:8px 16px;
+	text-align:right;
+	vertical-align:middle;
+	border-top: 1px solid #b1b1b1;
+}
+
+/* table */
+.separate,
+.outer {
+	margin: 0 auto;
+	border-collapse:separate;
+	width: 85%;
+}
+.bg1 {background-color:#f8f8f8; color:#000000; border-bottom: 1px solid #b1b1b1;}
+.bg2 {background-color:#000000; color:#ffffff; }
+.bg3 {background-color:#eeeeee; color:#000000; border-bottom: 1px solid #b1b1b1;}
+.bg4 {background-color:#f6f6f6; color:#000000; }
+.bg5 {background-color:#f6f6f6; color:#000000;}
+.fg1 {color:#b8b8b8;}
+.fg2 {color:#000000;}
+
+.outer {
+	border-top: 1px #bbbbbb solid;
+	border-left: none;
+	border-collapse: collapse;
+	text-align: left;
+}
+table.outer th,
+table.outer td {
+	padding: 10px ;
+	border-bottom: 1px #bbbbbb solid;
+	border-right: none;
+}
+
+table.outer tr.odd td {
+	background-color: #f8f8f8 ;
+}
+table.outer tr.odd td {
+	background-color: #f8f8f8 ;
+}
+table.outer th {
+	color: #ffffff ;
+	background-color: #666666 ;
+	font-weight: bold;
+}
+table.outer thead tr th {
+	color: #111 ;
+	background-color: #f8f8f8 ;
+	padding: 5px;
+	font-weight: bold;
+}
+table.outer thead tr td {
+	background-color: #eeeeee ;
+	border-bottom: 2px #bbbbbb double;
+	font-weight: bold;
+	padding: 5px;
+}
+
+input {
+	color: #000000;
+	background-color: #f8f8f8;
+	border-right: #000000 1px solid;
+	border-top: #000000 1px solid;	
+	border-left: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+}
+
+select {
+	color: #000000;
+ 	border-right: #000000 1px solid;
+	border-top: #000000 1px solid; background: #f8f8f8;
+	border-left: #000000 1px solid;
+	border-bottom: #000000 1px solid;
+}
+
+.head {
+	border-top:1px solid #cccccc;
+	padding:5px 0 5px 0;
+}
+.even {
+	border-top:1px solid #cccccc;
+	padding:10px 0 10px 0;
+}

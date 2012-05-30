@@ -1,0 +1,42 @@
+      <p><?php echo _INSTALL_CL1_0; ?></p>
+      <h4><?php echo _INSTALL_CL1_MAINFILE;?></h4>
+      <table width="100%" class="outer" cellspacing="5">
+		   <?php foreach ($this->v('check') as $ss_check){ ?>
+                <tr valign="top" align="left">
+                    <td class="head">
+                        <b><?php echo $ss_check['title']; ?></b><br />
+                        <span><?php echo $ss_check['msg']; ?></span><br>
+                        <span style="font-size:85%;"><?php echo $ss_check['em']; ?></span>
+                    </td>
+                    <td class="even">
+                       <?php echo $ss_check['form']; ?>
+                    </td>
+                </tr>
+		   <?php } ?>
+                <tr valign="top" align="left">
+                    <td class="head">
+                        <b><?php echo _INSTALL_CL1_10; ?></b><br />
+                        <span style="font-size:85%;"><?php echo _INSTALL_CL1_11; ?></span>
+                    </td>
+                    <td class="even">
+                       <input type="text" name="cookie_path" size="50" value="<?php $this->e('cookiePath') ?>" />
+                    </td>
+                </tr>
+
+           </table>
+	   <?php if ($this->v('htaccess')){?>
+	   <h4><?php echo _INSTALL_CL1_HTACCESS;?></h4>
+           <table width="100%" class="outer" cellspacing="5">
+                <tr valign="top" align="left">
+                    <td class="head">
+                        <?php echo _INSTALL_CL1_HTACCESS_TITLE; ?><br />
+                        <span style="font-size:85%;"><?php echo _INSTALL_CL1_HTACCESS_MSG; ?></span><br>
+                    </td>
+				 </tr>
+				 <tr>
+                    <td class="even">
+                       <textarea style="width:100%; height:100%;" onclick="this.select();"><?php $this->e('htaccess'); ?></textarea>
+                    </td>
+                </tr>
+           </table>
+       <?php } ?>

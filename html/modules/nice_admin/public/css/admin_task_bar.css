@@ -1,0 +1,113 @@
+div.adminTaskBarBox, 
+div.adminTaskBarControls,
+ul.adminTaskBarNav,
+ul.adminTaskBarNav li {
+	margin: 0;
+	padding: 0;
+}
+
+div.adminTaskBarBox {
+	height: 30px;
+}
+
+	div.adminTaskBarControls {
+		background: transparent url(../images/bg_header_rib.png) repeat-x left -20px;
+		font-family: 'Lucida Grande', Verdana, Arial, Helvetica, sans-serif;
+		height: 33px;
+		left: 0;
+		top: 0;
+		position: fixed;
+		width: 100%;
+		z-index: 102;
+	}
+
+		ul.adminTaskBarNav {
+			white-space: nowrap;
+			text-align: left;
+		}
+
+		ul.adminTaskBarNav li {
+			display: inline-block;
+			*display: inline; /* inline-block未対応のIE用CSSハック */
+			*zoom: 1; /* inline-block未対応のIE用CSSハック */
+			list-style-type: none;
+			position :relative;
+		}
+
+		ul.adminTaskBarNav li:hover {
+			background: transparent url(../images/bg_header_active.png) repeat-x left top;
+			position :relative;
+		}
+
+			ul.adminTaskBarNav li a {
+				color: #727272;
+				display: block;
+				border-right: 1px solid #D7D7D7;
+				line-height: 16px;
+				font-size: 14px;
+				height: 16px;
+				padding: 7px 6px 6px;
+				text-align: left;
+				text-decoration: none;
+			}
+
+			ul.adminTaskBarNav span.menu {
+				color: #727272;
+				display: block;
+				border-right: 1px solid #D7D7D7;
+				line-height: 16px;
+				font-size: 14px;
+				height: 16px;
+				padding: 7px 6px 6px;
+				text-align: center;
+				text-decoration: none;
+			}
+
+			
+				ul.subBlocksAdmin{
+					display:none;
+					position:absolute;
+					border:1px solid #333;
+					-moz-box-shadow: 2px 2px 10px #000;
+    				-webkit-box-shadow: 2px 2px 10px #000;
+    				padding:0px;
+					margin:0px;
+    				
+			}
+				ul.subBlocksAdmin li{
+					color:#000000;
+					display:block;
+					background: #ffffff;
+					filter: alpha(opacity=95);
+					-moz-opacity: 0.95;
+					opacity: 0.95;
+
+			}
+
+#tpModalAdminMenuControlPanel a {
+	background: url(../images/power.png) no-repeat 6px center;
+	padding-left: 32px;
+}
+
+#tpNoModalAdminMenuControlPanelLogout {
+	float: right;
+	border-left: 1px solid #D7D7D7;
+}
+
+	#tpNoModalAdminMenuControlPanelLogout a {
+		background: url(../images/logout.png) no-repeat 6px center;
+		padding-left: 32px;
+	}
+
+#adminTaskBarModalWindow {
+	background: #fff url(../images/ajax_loader.gif) no-repeat center center;
+}
+
+iframe#adminTaskBarIframe {
+	width: 100%;
+	height: 100%;
+}
+
+.adminTaskBarOverflowHidden {
+	overflow: hidden !important;
+}

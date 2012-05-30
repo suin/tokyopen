@@ -1,0 +1,85 @@
+div.node {
+	font-size: 12px;
+	line-height: 18px;
+	margin: 0 0 0 16px;
+	padding: 2px 0;
+	cursor: default;
+}
+
+	div.node span.toggle {
+		display: block;
+		float: left;
+		height: 12px;
+		width: 12px;
+		margin: 0 2px 0 0 ;
+		background: transparent url('../images/nochild.png') no-repeat center center;
+	}
+
+	div.node span.togglePlus {
+		background-image: url('../images/plus.jpg');
+		cursor: pointer;
+	}
+
+	div.node span.toggleMinus {
+		background-image: url('../images/minus.jpg');
+		cursor: pointer;
+	}
+
+	div.node span.icon {
+		display: block;
+		float: left;
+		height: 16px;
+		width: 16px;
+		margin: 0 1px 0 0 ;
+		background: transparent url('../images/nochild.png') no-repeat center center;
+	}
+
+	div.node span.iconFolder {
+		background-image: url('../images/folder.png');
+	}
+
+	div.node span.iconPage {
+		background-image: url('../images/page.png');
+	}
+
+	div.node span.iconExternalLink {
+		background-image: url('../images/external_link.png');
+	}
+
+	div.node span.iconLoading {
+		background-image: url('../images/loading.gif');
+	}
+
+	div.node span.iconModule {
+		background-image: url('../images/module.png');
+	}
+	
+	div.node span.title {
+		padding: 0 3px;
+		cursor: pointer;
+	}
+	
+	div.node span.highlight {
+		background: #485bfb;
+		color: #fff;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-o-border-radius: 2px;
+	}
+
+	div.node span.childrenTotal {
+		background: #999;
+		color: #fff;
+		padding: 1px 4px;
+		font-size: 10px;
+		line-height: 10px;
+		border-radius: 2px;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		-o-border-radius: 2px;
+	}
+
+	div.node span.childrenZero {
+		display: none;
+	}

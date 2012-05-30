@@ -1,0 +1,204 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" lang="ja">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=Shift_JIS" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title lang="ja">NicEdit 日本語版について</title>
+<style type="text/css">
+<!--
+body {
+  background-color: #FFF;
+  margin: 3em 10%;
+}
+dl {
+  border-top: solid 1px #CCC;
+  border-left: solid 1px #CCC;
+  border-right: solid 1px #CCC;
+}
+dt, dd {
+  margin: 0;
+  padding: 0.7em 1em;
+  border-bottom: solid 1px #CCC;
+}
+dt {
+  background-color: #F3F3F3;
+}
+dl dl dt, dl dl dd {
+  font-size: 0.8em;
+  padding: 0.2em 0.5em;
+}
+-->
+</style>
+</head>
+<body>
+
+<h1>NicEdit 日本語版について</h1>
+
+<h2>日本語版概要</h2>
+
+<p>NicEdit は、Brian Kirchoff 氏が MIT ライセンスで公開している軽快な WYSIWYG HTML エディタです。この日本語版は、MIT ライセンスに基づき、株式会社CMONOS が作成し無償で配布するものです。株式会社CMONOS と Brian Kirchoff 氏 の間に特別な提携関係などは一切なく、公式に認められた日本語版ではありません。</p>
+
+<dl class="item">
+	<dt>NicEdit 公式サイト</dt><dd><a href="http://nicedit.com/" target="_blank">http://nicedit.com/</a></dd>
+	<dt>著作権</dt><dd><a href="http://bkirchoff.com/" target="_blank">Brian Kirchoff</a> 氏</dd>
+	<dt>ライセンス</dt><dd>MIT ライセンス</dd>
+	<dt>ボタンアイコン</dt><dd><a href="http://www.famfamfam.com/" target="_blank">famfamfam</a></dd>
+	<dt>日本語版作成</dt><dd><a href="http://cmonos.jp/" target="_blank">株式会社CMONOS</a></dd>
+	<dt>日本語版に含まれる追加プラグイン</dt><dd>nicXHTML, nicCode</dd>
+	<dt>日本語版デモ</dt><dd><a href="./demos/index.html" target="_blank">日本語版デモ・インデックス</a></dd>
+	<dt>日本語版ダウンロード</dt><dd><a href="http://cmonos.jp/download/nicEdit_ja.zip">http://cmonos.jp/download/nicEdit_ja.zip</a></dd>
+</dl>
+
+<h2>日本語版オプション</h2>
+
+<p>例）new nicEditor({panelType :'nostyle'}).panelInstance(テキストエリアID);</p>
+
+<dl class="item">
+	<dt>iconsPath</dt><dd>特別な値
+		<dl class="item">
+			<dt>auto</dt><dd>nicEditorIcons.gif が nicEdit.js と同じ階層にあるとき、自動的に nicEditorIcons.gif のパスを取得します。</dd>
+		</dl>
+	</dd>
+	<dt>panelType</dt><dd>
+		<dl class="item">
+			<dt>nostyle</dt><dd>スタイルを設定するボタンを除外します。</dd>
+			<dt>noimage</dt><dd>画像ボタンを除外します。</dd>
+			<dt>mini</dt><dd>最小限のボタンのみで構成します(太字・斜体・左寄せ・中央揃え・右寄せ・リスト・番号リスト・リンク・リンク解除・装飾解除・区切り線・取り消し・やり直し)。</dd>
+			<dt>nostylemini</dt><dd>mini からスタイルを設定するボタンを除外します。</dd>
+		</dl>
+	</dd>
+	<dt>convertToText</dt><dd>
+		<dl class="item">
+			<dt>true</dt><dd>テキストエリアから NicEdit 編集エリアに変換する際、改行を &lt;br /&gt; タグに変換し、NicEdit 編集エリアからテキストエリアに変換する際、&lt;br /&gt; タグや &lt;div&gt; タグなどを改行に変換します。</dd>
+			<dt>false</dt><dd>変換しません。</dd>
+		</dl>
+	</dd>
+</dl>
+
+<h2>日本語版バージョン履歴</h2>
+
+<p>この日本語版にはオリジナル版にない独自の拡張が含まれていますのでご注意ください。</p>
+
+<dl class="item">
+	<dt>2010年12月3日</dt><dd>
+		<ul>
+			<li>InternetExplorer で、&lt;object&gt;タグ内に&lt;embed&gt;タグが書かれている場合、&lt;embed&gt;タグがノードツリーから削除されてしまい、&lt;embed&gt;タグを強引に保持させると逆に&lt;object&gt;タグがノードツリーから削除されてしまう問題に対処しました。&lt;embed&gt;タグを強引に保持し、テキストエリアにHTMLを戻す際、&lt;embed&gt;タグから&lt;object&gt;タグを復元します。ただし元のタグを完全に再現することはできません。(hashikunさん情報提供ありがとうございます！)</li>
+		</ul>
+	</dd>
+	<dt>2010年10月11日</dt><dd>
+		<ul>
+			<li>XHTML 変換を有効にしている場合、&lt;hr&gt; が XHTML変換時に消されてしまう不具合を修正しました。(Ninja104さん情報提供ありがとうございます！)</li>
+		</ul>
+	</dd>
+	<dt>2010年8月21日</dt><dd>
+		<ul>
+			<li>XHTML 変換を有効にしている場合、InternetExplorer で文字列に装飾を施すと、タグに nicEdit.js コードの一部が書き出される場合がある不具合を修正しました。(角田さん情報提供ありがとうございます！)</li>
+			<li>XHTML 変換を有効にしている場合、InternetExplorer および Opera で文字色や下線を再編集できない不具合を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年7月26日</dt><dd>
+		<ul>
+			<li>XHTML 変換を有効にしている場合、InternetExplorer で文字列に文字色と背景色のみ設定されているとき装飾を解除できない不具合を修正しました。(Pontaさん情報提供ありがとうございます！)</li>
+			<li>XHTML 変換を有効にしているとき、文字列に背景色を設定するとインラインスタイル指定が壊れる不具合を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年7月22日</dt><dd>
+		<ul>
+			<li>convertToText を有効にしているとき、&lt;p&gt; タグが適切に設定されない場合がある不具合を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年7月14日</dt><dd>
+		<ul>
+			<li>InternetExplorer で画像を挿入する際回り込みを指定しないとエラーダイアログが出る不具合を修正しました。(Pontaさん情報提供ありがとうございます！)</li>
+			<li>XHTML 変換後、画像の回り込みを再設定できなくなる不具合を修正しました。</li>
+			<li>Opera でリンクを開くウィンドウが設定できない不具合を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年7月9日</dt><dd>
+		<ul>
+			<li>2010年7月8日版の修正のために、Firefox で文字列に対して設定した文字色および背景色が表示に反映されなくなっていた不具合を修正しました。(Pontaさん情報提供ありがとうございます！)</li>
+		</ul>
+	</dd>
+	<dt>2010年7月8日</dt><dd>
+		<ul>
+			<li>文字サイズを変更して XHTML 変換を行うと、それ以降の文字サイズ指定が重複して設定される不具合を修正しました。(Pontaさん情報提供ありがとうございます！)</li>
+			<li>InternetExplorer で XHTML 変換を行うと、nicEdit.js コードの一部が混入する場合がある不具合(2010年05月31日版以降で発生)を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年7月7日</dt><dd>
+		<ul>
+			<li>Firefox で太字とイタリックを重複して設定して XHTML 変換を行うと、パネルから設定を解除できなくなる不具合を修正しました。(Pontaさん情報提供ありがとうございます！)</li>
+		</ul>
+	</dd>
+	<dt>2010年6月26日</dt><dd>
+		<ul>
+			<li>オブジェクトリテラルのキーに予約語が使用されている問題を修正しました。（Nishigoさんご指摘ありがとうございます！）</li>
+			<li>フォントの指定に iPad に搭載されているヒラギノフォントを追加しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年6月11日</dt><dd>
+		<ul>
+			<li>Safari5 でツールチップの幅が 0px になる不具合を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年6月2日</dt><dd>
+		<ul>
+			<li>XHTML 変換機能を有効にすると、XHTML 変換時に画像タグが消えてしまう不具合を修正しました。(lenoaさんご指摘ありがとうございます！)</li>
+			<li>convertToText オプションを有効にしていると内容を持たない要素をすべて削除してしまう不具合を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年5月31日</dt><dd>
+		<ul>
+			<li>XHTML 変換機能を有効にすると、テキストとして入力した &lt; や &gt;  がエスケープされない不具合を修正しました。</li>
+			<li>Firefox で初期値を setContent() で指定できない不具合を修正しました。(Pontaさん情報提供ありがとうございます！)</li>
+		</ul>
+	</dd>
+	<dt>2010年5月26日</dt><dd>
+		<ul>
+			<li>Firefox でリンク等を設定する際ボタンを押さずにリターンキーを入力すると、リターンキーが編集エリアに渡ってしまい、リンクテキストが消えてしまう不具合を修正しました。(Pontaさん情報提供ありがとうございます！)</li>
+			<li>Firefox で一行目のテキストを左右中央に揃えようとすると、エラーとなる不具合を修正しました。(Pontaさん情報提供ありがとうございます！/公式フォーラムに<a href="http://www.nicedit.com/forums/viewtopic.php?f=4&amp;t=856&amp;p=1587#p4788" target="_blank">解決方法</a>を投稿してくださった omarsmith 氏に感謝します。)</li>
+		</ul>
+	</dd>
+	<dt>2010年5月6日</dt><dd>
+		<ul>
+			<li>IE で背景色を指定できない不具合を修正しました。(ささぽんさん情報提供ありがとうございます！)</li>
+		</ul>
+	</dd>
+	<dt>2010年4月5日</dt><dd>
+		<ul>
+			<li>フォント指定のうち「ゴシック」と「明朝」については、Windows および Mac で日本語にも適用されるようにしました。</li>
+			<li>IE5.5 で、XHTML 変換の際フォントサイズの変更が失われる不具合を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年3月27日</dt><dd>
+		<ul>
+			<li>IE でテキストエリア中の style 属性および class 属性を無視してしまう不具合を修正しました。</li>
+			<li>IE で終了タグを省略した空要素があるとき、XHTML 変換の際、ノードが崩れることがある不具合を修正しました。</li>
+			<li>IE で何度か書き込むと改行が増えてしまう不具合を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年3月8日</dt><dd>
+		<ul>
+			<li>panelType に「mini」と「nostylemini」を追加しました。</li>
+			<li>XHTML 変換機能で、前回変換したスタイルがそのまま style 属性に残ってしまい、同じスタイル指定が重複して記述される問題を修正しました。</li>
+		</ul>
+	</dd>
+	<dt>2010年1月6日</dt><dd>
+		<ul>
+			<li>フローティングウィンドウのデザインを変更しました。</li>
+			<li>「iconsPath」オプションに特別な値「auto」を追加し、これをデフォルトとしました。nicEditorIcons.gif が nicEdit.js と同じ階層にあるとき、自動的に nicEditorIcons.gif のパスを取得します。</li>
+			<li>改行をタグに変換する textarea での使用を想定した「convertToText(true/false)」オプションを追加し、「true」をデフォルトとしました。テキストエリアから NicEdit 編集エリアに変換する際、改行を &lt;br /&gt; タグに変換し、NicEdit 編集エリアからテキストエリアに変換する際、&lt;br /&gt; タグや &lt;div&gt; タグなどを改行に変換します。</li>
+			<li>パネルタイプを選択する「panelType」オプションを追加しました。スタイルを設定するボタンを除外する「nostyle」と画像ボタンを除外する「noimage」を設定できます。</li>
+			<li>「取り消し」ボタンと「やり直し」ボタンを追加しました。</li>
+			<li>XHTML 変換機能で、タグの入れ子構造が崩れる不具合(「&lt;strong&gt;&lt;em&gt;ボールド・イタリック&lt;/strong&gt;&lt;/em&gt;」のようになる)を修正しました。</li>
+			<li>XHTML 変換機能で align="" 属性をスタイルに変換するようにしました。</li>
+			<li>ブロックメニューの見出しタグを h2 と h3 のみとしました。</li>
+			<li>NicEdit 編集エリアの内容をテキストエリアの内容と同期させる「updateInstance()」を追加しました。</li>
+			<li>NicEdit 編集エリアからフォーカスがはずれたときにも、NicEdit 編集エリアの内容をテキストエリアにコピーするようにしました。</li>
+		</ul>
+	</dd>
+</dl>
+
+</body>
+</html>
