@@ -1,0 +1,182 @@
+<language>
+
+<import dirname="pengin" name="form" />
+
+<s>TOKYOPen</s>
+<t>東京ペン</t>
+
+<s>Mailform</s>
+<t>メールフォーム</t>
+
+<s>Send Mail</s>
+<t>送信する</t>
+
+<s>Please review the details entered.</s>
+<t>入力内容をご確認ください。</t>
+
+<s>Thank you for the inquiry.</s>
+<t>お問い合わせありがとうございました。</t>
+
+<s>We will be in touch soon.</s>
+<t>近日中に担当者よりご連絡させていただきます。</t>
+
+<s>We sent e-mail to you for the check.</s>
+<t>確認のためにe-mailを送りました。</t>
+
+<s>Form Preference</s>
+<t>基本設定</t>
+
+<s>Permission denied.</s>
+<t>権限がありません。</t>
+
+<s>Page not found.</s>
+<t>ページが見つかりません。</t>
+
+<s>Mail to Sender</s>
+<t>送信者に控えメールを送信する</t>
+
+<s>Receiver Email</s>
+<t>担当者メールアドレス</t>
+
+<s>You can specify emails multiply by email separated with comma.</s>
+<t>複数のメールアドレスを指定する場合は、半角コンマ(,)で区切ってください。</t>
+
+<s>Screen Preference</s>
+<t>画面設定</t>
+
+<s>Successfully saved.</s>
+<t>保存しました。</t>
+
+<s>Form Title</s>
+<t>フォームタイトル</t>
+
+<s>Please create at least one field.</s>
+<t>入力欄は最低1つ以上作成してください。</t>
+
+<s>Row {1}</s>
+<t>行 {1}</t>
+
+<s>Label</s>
+<t>入力欄名</t>
+
+<s>Please place a field.</s>
+<t>入力欄を配置してください。</t>
+
+<s>Unexpected field.</s>
+<t>予期しない入力欄です。</t>
+
+<s>Failed to save form data.</s>
+<t>フォームデータの保存に失敗しました。</t>
+
+<s>Failed to delete old fields.</s>
+<t>古い入力欄データの削除に失敗しました。</t>
+
+<s>Field data not found: id: {1}</s>
+<t>入力欄データが見つかりません: ID: {1}</t>
+
+<s>Failed to save field data: id: {1}</s>
+<t>入力欄データの保存に失敗しました: ID: {1}</t>
+
+<s>Failed to update field name: id: {1}</s>
+<t>入力欄識別子の更新に失敗しました: ID: {1}</t>
+
+<s>Form Description</s>
+<t>フォーム説明文</t>
+
+<s>(optional)</s>
+<t>(任意)</t>
+
+<s>Move</s>
+<t>移動する</t>
+
+<s>Palette</s>
+<t>パレット</t>
+
+<s>Delete Field</s>
+<t>入力欄を削除する</t>
+
+<s>Field Option</s>
+<t>入力欄設定</t>
+
+<s>Add a New Row</s>
+<t>行を追加する</t>
+
+<s>Remove Row</s>
+<t>行を削除する</t>
+
+<s>No Label</s>
+<t>名称未設定</t>
+
+<s>Save Screen Preference</s>
+<t>画面設定を保存する</t>
+
+<s>Textarea</s>
+<t>テキストエリア</t>
+
+<s>Default Value</s>
+<t>初期値</t>
+
+<s>Rows</s>
+<t>行数</t>
+
+<s>Cols</s>
+<t>幅</t>
+
+<s>Must be number integer than {1}</s>
+<t>{1}以上の整数を入力してください。</t>
+
+<s>Checkbox</s>
+<t>チェックボックス</t>
+
+<s>Options</s>
+<t>選択肢</t>
+
+<s>You can specify options multiply by option separated with line break.</s>
+<t>複数の選択肢を指定する場合は、改行で区切ってください。</t>
+
+<s>Email</s>
+<t>メールアドレス</t>
+
+<s>Sender Name</s>
+<t>送信者名</t>
+
+<s>Radio</s>
+<t>ラジオ</t>
+
+<s>Select</s>
+<t>セレクト</t>
+
+<s>Textbox</s>
+<t>テキストボックス</t>
+
+<s>Are you sure to delete this field?</s>
+<t>この入力欄を削除してもよろしいですか?</t>
+
+<s>Are you sure to remove this row?</s>
+<t>この行を削除してもよろしいですか?</t>
+
+<s>Your Name</s>
+<t>お名前</t>
+
+<s>Your Email</s>
+<t>メールアドレス</t>
+
+<s>Body Text</s>
+<t>お問い合わせ内容</t>
+
+<s><![CDATA[<p>Please fill out the form below to contact us.</p>]]></s>
+<t><![CDATA[<p>下記のフォームにご入力の上、お問い合わせください。</p>]]></t>
+
+<s>Please input your email address exactly.</s>
+<t>メールアドレスはお間違えのないようにご入力ください。</t>
+
+<s>Please place one {1} field.</s>
+<t>「{1}」の入力欄は必ずひとつ配置してください。</t>
+
+<s>{1} field must be one. {2} fields were placed.</s>
+<t>「{1}」の入力欄は必ずひとつにしてください。{2}つの入力欄が配置されています。</t>
+
+<s>Requiring setting must be on.</s>
+<t>必須設定をオンにしてください。</t>
+
+</language>
